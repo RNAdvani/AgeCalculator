@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="date">
+                <div class="inpbox">
+                    <p>DATE</p>
+                    <input class="inpd" id="inpdate" type="number" placeholder="DD">
+                </div>
+                <div class="inpbox">
+                    <p>MONTH</p>
+                <input class="inpd" id="inpmonth" type="number" placeholder="MM">
+                </div>
+                <div class="inpbox">
+                    <p>YEAR</p>
+                    <input class="inpd" id="inpyear" type="number" placeholder="YYYY">
+                </div>
+                <button onclick=calcFunc() type="submit" id="button"><i class="fas fa-arrow-down"></i></button>
+            </div>
+            <div class="age">
+                <h2><span id="years">88</span>years</h2>
+                <h2><span id="months">99</span>months</h2>
+                <h2><span id="days">69</span>days</h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c2156a74ad.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

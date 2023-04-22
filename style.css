@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Bebas Neue',cursive;
+}
+*{
+    box-sizing: border-box;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    position: relative;
+    gap: 2rem;
+}
+.inpbox{
+    width: 30%;
+}
+.inpbox input{
+    width: 100%;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+}
+.inpbox input::placeholder{
+    color: #eee2df;
+}
+.inpbox p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin: 0;
+    padding: 10px 0;
+}
+.date input::placeholder{
+    color: rgb(80, 78, 78);
+}
+.age{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font: 700 3.2rem 'Bebas Neue';
+    line-height: 150%;
+    font-style: italic;
+    padding: 60px 50px 50px 50px;
+    box-sizing: border-box;
+}
+.age h2{
+    margin: 0;
+}
+.age span{
+    color: blueviolet;
+}
+.main{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+}
+.container div{
+    width: 100%;
+}
+.container{
+    aspect-ratio: 16/10;
+    width: 45vmax;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px 20px 100px 20px;
+}
+#button{
+    position: absolute;
+    bottom: -80%;
+    right: 10%;
+    padding: 0.4rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 3.5rem;
+    font-size: 1.8rem;
+}
+#button:hover{
+    background-color: black;
+    transition: all 500ms cubic-bezier(.4,.7,.4,.7);
+}
+@media (max-width:949px) {
+    .date input{
+        width: 100%;
+    }
+}
+@media(max-width:849px){
+    .container{
+        width: 90vw;
+        height: 80vh;
+    }
+    .inpbox p{
+        font-size: 1rem;
+    }
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
